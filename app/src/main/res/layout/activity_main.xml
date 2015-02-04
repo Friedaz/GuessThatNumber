@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:textAlignment="gravity"
+        android:text="I've chosen a number between 1-100, see if you can guess it!"
+        android:textSize="14pt"
+
+    />
+
+    <EditText
+        android:id="@+id/guess"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:gravity="center"
+    />
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Guess!"
+        android:onClick="guessNumber"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="New Number!"
+        android:onClick="startAgain"
+
+
+        />
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textAlignment="gravity"
+    />
+</LinearLayout>
